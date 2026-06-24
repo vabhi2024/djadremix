@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Home Page -->
+    <url>
+        <loc>https://djadremix.netlify.app/</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- About Channel -->
+    <url>
+        <loc>https://djadremix.netlify.app/page/about-channel.aspx.html</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- About -->
+    <url>
+        <loc>https://djadremix.netlify.app/page/about.aspx.html</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Developer -->
+    <url>
+        <loc>https://djadremix.netlify.app/page/developer.aspx.html</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- FAQs -->
+    <url>
+        <loc>https://djadremix.netlify.app/page/FAQs.aspx.html</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- My Story -->
+    <url>
+        <loc>https://djadremix.netlify.app/page/mystory.aspx.html</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Review -->
+    <url>
+        <loc>https://djadremix.netlify.app/page/review.aspx.html</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Terms -->
+    <url>
+        <loc>https://djadremix.netlify.app/page/terms.aspx.html</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Top List -->
+    <url>
+        <loc>https://djadremix.netlify.app/page/top-list.aspx.html</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- Tutorial -->
+    <url>
+        <loc>https://djadremix.netlify.app/page/tutorial.aspx.html</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+</urlset>
