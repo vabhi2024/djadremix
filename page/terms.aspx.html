@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <title>djadremix.com</title>
+ 
+  <!-- Favicon -->
+ <link rel="icon" href="logo.png" type="image/png">
+ 
+ <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">   
+  <link rel="stylesheet" href="page.css" />
+  
+  <style>
+     main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+     }
+
+    h2 {
+      color: #e91e63;
+      margin-top: 25px;
+     }
+
+    p, li {
+      color: #222;
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+
+    ul {
+      margin-left: 20px;
+      list-style-type: disc;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+  <!-- HEADER & NAVBAR -->
+ <header>
+    <div class="logo">DJ <span style="color:red">AD Remix</span></div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="https://www.google.com/search?q=deepakkumarvermadjabhishek">About</a>
+      <a href="https://youtube.com/@deepakkumarvermadjabhishek">Videos</a>
+      <a href="tel:+919452886695">Contact</a>
+    </div>
+    <div class="menu-btn" onclick="openMenu()">☰</div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="close-btn" onclick="closeMenu()">×</div>
+    <a href="#" style="color:white"><i class="fa fa-home"></i> Home</a>
+    <a href="https://www.google.com/search?q=deepakkumarvermadjabhishek"><i class="fab fa-google-wallet"></i> About Us</a>
+    <a href="https://youtube.com/@deepakkumarvermadjabhishek"><i class="fa fa-play-circle"></i> Our Videos</a>
+    <a href="https://djadremix.netlify.app/version.1.0.0.apk" download class="download-btn"><i class="fa fa-download"></i> Download App</a>
+  </div>
+  
+  <!-- HEADER : POPUP TOGGLE -->  
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-button" onclick="togglePopup()">&times;</span>
+     </div>
+  </div>
+
+ <main>
+  <p>
+    Welcome to <strong>DJ AD Remix</strong>! By accessing or using our website, you agree to these Terms of Service (ToS). Please read them carefully before using our platform.
+  </p>
+
+  <h2>1. Acceptance of Terms :</h2>
+  <p>By using DJ AD Remix, you agree to comply with these Terms of Service. If you do not agree with any part of these terms, please do not use our website.</p>
+
+  <h2>2. Use of the Website :</h2>
+  <ul>
+    <li>You may use this website for personal and entertainment purposes only.</li>
+    <li>You must not misuse, damage, or attempt unauthorized access to any part of the website.</li>
+    <li>You agree to use the website in accordance with all applicable laws and regulations.</li>
+  </ul>
+
+  <h2>3. User Content :</h2>
+  <ul>
+    <li>Any comments, feedback, or messages submitted by users must be respectful and lawful.</li>
+    <li>By submitting content, you grant DJ AD Remix permission to display or use it for promotional purposes.</li>
+    <li>We reserve the right to remove any content that violates our policies.</li>
+  </ul>
+
+  <h2>4. Intellectual Property :</h2>
+  <p>All content, including text, graphics, logos, audio files, and website materials, is the property of DJ AD Remix unless otherwise stated. Unauthorized copying, distribution, or reproduction is prohibited.</p>
+
+  <h2>5. Downloadable Content :</h2>
+  <p>Any downloadable files or content provided through the website are used at your own risk. DJ AD Remix is not responsible for any loss, damage, or technical issues resulting from downloads.</p>
+
+  <h2>6. Third-Party Links :</h2>
+  <p>Our website may contain links to third-party websites such as YouTube, Facebook, Instagram, or other platforms. We are not responsible for the content, policies, or practices of those websites.</p>
+
+  <h2>7. Termination :</h2>
+  <p>We reserve the right to restrict, suspend, or terminate access to our website if users violate these Terms of Service or engage in harmful activities.</p>
+
+  <h2>8. Limitation of Liability :</h2>
+  <p>All services and content are provided on an "as is" basis. DJ AD Remix shall not be held liable for any direct, indirect, incidental, or consequential damages arising from the use of this website.</p>
+
+  <h2>9. Changes to Terms :</h2>
+  <p>We may update these Terms of Service at any time without prior notice. Continued use of the website after changes are posted constitutes acceptance of the revised terms.</p>
+
+  <h2>10. Contact Us :</h2>
+  <p>If you have any questions regarding these Terms of Service, please contact us:</p>
+
+  <ul>
+    <li><strong>Email:</strong> Deepakkumarvermadjabhishek@gmail.com</li>
+    <li><strong>WhatsApp:</strong> +91-9452886695</li>
+  </ul>
+
+</main>
+  
+<!-- Footer -->  
+  <div class="footer">
+    <p>✧ Music Composer ✧</p>
+    <h3>Deepak Kumar Verma<br> <span style="color:red">DJ Abhishek</span><br>-----------------•⁠✧✧•⁠-----------------</h3>
+    <div class="footer-icons">
+      <a href="https://www.google.com/search?q=deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/128/2702/2702602.png" alt="google"></a>
+      <a href="https://facebook.com/deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="facebook"></a>
+      <a href="https://instagram.com/deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="instagram"></a>
+      <a href="https://youtube.com/@deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/128/15527/15527679.png" alt="youtube"></a>
+      <a href="https://wa.me/9452886695"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536445.png" alt="whatsapp"></a>
+    </div>
+    <p>&copy; 2026 Designed & Developed with <a href="http://adtech2021.netlify.app/" style="text-decoration:none"><span style="color:skyblue">ADTech India</span></a></p>
+    <div class="footer-links">
+      <a href="#">Home</a> | <a href="about.aspx.html">About</a> | <a href="developer.aspx.html">Developer</a> | <a href="terms.aspx.html">Terms</a> | <a href="FAQs.aspx.html">FAQs</a>
+    </div>
+  </div>
+  
+  <script src="footer.js"></script>
+</body>
+</html>

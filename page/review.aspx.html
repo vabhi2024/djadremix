@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <title>djadremix.com</title>
+ 
+  <!-- Favicon -->
+ <link rel="icon" href="logo.png" type="image/png">
+ 
+ <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">   
+  <link rel="stylesheet" href="page.css" />
+  
+  <style>
+      main {
+      max-width: 1000px;
+      margin: 10px auto;
+      padding: 0 10px;
+    }
+
+    .review-card {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      padding: 20px;
+      margin-bottom: 10px;
+      transition: transform 0.2s;
+    }
+
+    .review-card:hover {
+      transform: scale(1.01);
+    }
+
+    .review-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 15px;
+      background: #ccc;
+    }
+
+    .reviewer-info h3 {
+       margin: 0;
+      font-size: 1.1rem;
+      color: #1d2671;
+    }
+
+    .reviewer-info span {
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    .rating {
+      color: #ffc107;
+      margin-top: 5px;
+    }
+
+    .review-content {
+      font-size: 0.95rem;
+      color: #555;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER & NAVBAR -->
+ <header>
+    <div class="logo">DJ <span style="color:red">AD Remix</span></div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="https://www.google.com/search?q=deepakkumarvermadjabhishek">About</a>
+      <a href="https://youtube.com/@deepakkumarvermadjabhishek">Videos</a>
+      <a href="tel:+919452886695">Contact</a>
+    </div>
+    <div class="menu-btn" onclick="openMenu()">☰</div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="close-btn" onclick="closeMenu()">×</div>
+    <a href="#" style="color:white"><i class="fa fa-home"></i> Home</a>
+    <a href="https://www.google.com/search?q=deepakkumarvermadjabhishek"><i class="fab fa-google-wallet"></i> About Us</a>
+    <a href="https://youtube.com/@deepakkumarvermadjabhishek"><i class="fa fa-play-circle"></i> Our Videos</a>
+    <a href="https://djadremix.netlify.app/version.1.0.0.apk" download class="download-btn"><i class="fa fa-download"></i> Download App</a>
+  </div>
+  
+  <!-- HEADER : POPUP TOGGLE -->  
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-button" onclick="togglePopup()">&times;</span>
+     </div>
+  </div>
+
+<main>
+
+  <div class="review-card">
+    <div class="review-header">
+      <div class="avatar" style="background-image:url('https://i.pravatar.cc/50?img=11');background-size:cover;"></div>
+      <div class="reviewer-info">
+        <h3>Rahul Singh</h3>
+        <span>DJ Remix Collection</span>
+        <div class="rating">★★★★★</div>
+      </div>
+    </div>
+    <div class="review-content">
+      DJ AD Remix par milne wale Bhojpuri remix tracks bahut hi zabardast hote hain. Sound quality aur bass dono excellent hain.
+    </div>
+  </div>
+
+  <div class="review-card">
+    <div class="review-header">
+      <div class="avatar" style="background-image:url('https://i.pravatar.cc/50?img=12');background-size:cover;"></div>
+      <div class="reviewer-info">
+        <h3>Priya Verma</h3>
+        <span>Music Experience</span>
+        <div class="rating">★★★★★</div>
+      </div>
+    </div>
+    <div class="review-content">
+      Mujhe yahan ke Bollywood remix songs bahut pasand hain. Har week naye tracks mil jate hain.
+    </div>
+  </div>
+
+  <div class="review-card">
+    <div class="review-header">
+      <div class="avatar" style="background-image:url('https://i.pravatar.cc/50?img=13');background-size:cover;"></div>
+      <div class="reviewer-info">
+        <h3>Amit Yadav</h3>
+        <span>Website Review</span>
+        <div class="rating">★★★★☆</div>
+      </div>
+    </div>
+    <div class="review-content">
+      Website ka design simple aur fast hai. Songs download karna bhi kaafi easy hai.
+    </div>
+  </div>
+
+  <div class="review-card">
+    <div class="review-header">
+      <div class="avatar" style="background-image:url('https://i.pravatar.cc/50?img=14');background-size:cover;"></div>
+      <div class="reviewer-info">
+        <h3>Pooja Mishra</h3>
+        <span>DJ Songs Review</span>
+        <div class="rating">★★★★★</div>
+      </div>
+    </div>
+    <div class="review-content">
+      Party ke liye latest DJ remix songs yahin se download karti hoon. Collection bahut accha hai.
+    </div>
+  </div>
+
+  <div class="review-card">
+    <div class="review-header">
+      <div class="avatar" style="background-image:url('https://i.pravatar.cc/50?img=15');background-size:cover;"></div>
+      <div class="reviewer-info">
+        <h3>Vikas Kumar</h3>
+        <span>Bhojpuri Remix Review</span>
+        <div class="rating">★★★★★</div>
+      </div>
+    </div>
+    <div class="review-content">
+      Bhojpuri remix section outstanding hai. Har track professional quality ka lagta hai.
+    </div>
+  </div>
+
+  <div class="review-card">
+    <div class="review-header">
+      <div class="avatar" style="background-image:url('https://i.pravatar.cc/50?img=16');background-size:cover;"></div>
+      <div class="reviewer-info">
+        <h3>Neha Sharma</h3>
+        <span>User Experience</span>
+        <div class="rating">★★★★★</div>
+      </div>
+    </div>
+    <div class="review-content">
+      DJ AD Remix par naye aur trending songs bahut jaldi upload ho jate hain. Bahut helpful website hai.
+    </div>
+  </div>
+
+  <div class="review-card">
+    <div class="review-header">
+      <div class="avatar" style="background-image:url('https://i.pravatar.cc/50?img=17');background-size:cover;"></div>
+      <div class="reviewer-info">
+        <h3>Sandeep Raj</h3>
+        <span>Audio Quality Review</span>
+        <div class="rating">★★★★★</div>
+      </div>
+    </div>
+    <div class="review-content">
+      Audio quality clear aur powerful hai. Bass lovers ke liye perfect platform hai.
+    </div>
+  </div>
+
+  <div class="review-card">
+    <div class="review-header">
+      <div class="avatar" style="background-image:url('https://i.pravatar.cc/50?img=18');background-size:cover;"></div>
+      <div class="reviewer-info">
+        <h3>Anjali Gupta</h3>
+        <span>Latest Remix Songs</span>
+        <div class="rating">★★★★☆</div>
+      </div>
+    </div>
+    <div class="review-content">
+      Latest remix songs ka collection bahut accha hai. Interface bhi user-friendly hai.
+    </div>
+  </div>
+
+  <div class="review-card">
+    <div class="review-header">
+      <div class="avatar" style="background-image:url('https://i.pravatar.cc/50?img=19');background-size:cover;"></div>
+      <div class="reviewer-info">
+        <h3>Ritesh Pandey</h3>
+        <span>Party Mix Review</span>
+        <div class="rating">★★★★★</div>
+      </div>
+    </div>
+    <div class="review-content">
+      Party mashups aur DJ mixes energetic hote hain. Friends ke saath enjoy karne ke liye best.
+    </div>
+  </div>
+
+  <div class="review-card">
+    <div class="review-header">
+      <div class="avatar" style="background-image:url('https://i.pravatar.cc/50?img=20');background-size:cover;"></div>
+      <div class="reviewer-info">
+        <h3>Kajal Singh</h3>
+        <span>Overall Review</span>
+        <div class="rating">★★★★★</div>
+      </div>
+    </div>
+    <div class="review-content">
+      Deepak Kumar Verma DJ Abhishek ka kaam bahut impressive hai. Website par quality content aur remix songs milte hain.
+    </div>
+  </div>
+
+</main>
+  
+<!-- Footer -->  
+  <div class="footer">
+    <p>✧ Music Composer ✧</p>
+    <h3>Deepak Kumar Verma<br> <span style="color:red">DJ Abhishek</span><br>-----------------•⁠✧✧•⁠-----------------</h3>
+    <div class="footer-icons">
+      <a href="https://www.google.com/search?q=deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/128/2702/2702602.png" alt="google"></a>
+      <a href="https://facebook.com/deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="facebook"></a>
+      <a href="https://instagram.com/deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="instagram"></a>
+      <a href="https://youtube.com/@deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/128/15527/15527679.png" alt="youtube"></a>
+      <a href="https://wa.me/9452886695"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536445.png" alt="whatsapp"></a>
+    </div>
+    <p>&copy; 2026 Designed & Developed with <a href="http://adtech2021.netlify.app/" style="text-decoration:none"><span style="color:skyblue">ADTech India</span></a></p>
+    <div class="footer-links">
+      <a href="#">Home</a> | <a href="about.aspx.html">About</a> | <a href="developer.aspx.html">Developer</a> | <a href="terms.aspx.html">Terms</a> | <a href="FAQs.aspx.html">FAQs</a>
+    </div>
+  </div>
+  
+  <script src="footer.js"></script>
+</body>
+</html>

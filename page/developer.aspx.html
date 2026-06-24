@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <title>djadremix.com</title>
+ 
+  <!-- Favicon -->
+ <link rel="icon" href="logo.png" type="image/png">
+ 
+ <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">   
+  <link rel="stylesheet" href="page.css" />
+   
+  <style>
+   main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 calc(33.333% - 20px);
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h3 {
+      color: #1abc9c;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+   
+  </style>
+</head>
+<body>
+
+  <!-- HEADER & NAVBAR -->
+ <header>
+    <div class="logo">DJ <span style="color:red">AD Remix</span></div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="https://www.google.com/search?q=deepakkumarvermadjabhishek">About</a>
+      <a href="https://youtube.com/@deepakkumarvermadjabhishek">Videos</a>
+      <a href="tel:+919452886695">Contact</a>
+    </div>
+    <div class="menu-btn" onclick="openMenu()">☰</div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="close-btn" onclick="closeMenu()">×</div>
+    <a href="#" style="color:white"><i class="fa fa-home"></i> Home</a>
+    <a href="https://www.google.com/search?q=deepakkumarvermadjabhishek"><i class="fab fa-google-wallet"></i> About Us</a>
+    <a href="https://youtube.com/@deepakkumarvermadjabhishek"><i class="fa fa-play-circle"></i> Our Videos</a>
+    <a href="https://djadremix.netlify.app/version.1.0.0.apk" download class="download-btn"><i class="fa fa-download"></i> Download App</a>
+  </div>
+  
+  <!-- HEADER : POPUP TOGGLE -->  
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-button" onclick="togglePopup()">&times;</span>
+     </div>
+  </div>
+
+<main>
+  <h2 class="section-title">What We Offer?</h2>
+
+  <div class="services">
+    <div class="card">
+      <h3>Website Development</h3>
+      <p>We build fast, modern, and SEO-friendly websites using HTML, CSS, JavaScript, React, and other latest technologies.</p>
+    </div>
+
+    <div class="card">
+      <h3>PWA Applications</h3>
+      <p>Convert your website into a Progressive Web App (PWA) to support offline use, home screen installs, and fast performance.</p>
+    </div>
+
+    <div class="card">
+      <h3>Custom Tools</h3>
+      <p>Need something specific? We develop calculators, forms, data tools, and utilities tailored to your exact needs.</p>
+    </div>
+
+    <div class="card">
+      <h3>App UI/UX Design</h3>
+      <p>Get a clean, mobile-first interface with modern design trends, transitions, and responsive layouts using Figma, Tailwind, or custom CSS.</p>
+    </div>
+
+    <div class="card">
+      <h3>SEO Optimization</h3>
+      <p>Rank better on search engines. We provide keyword optimization, meta tag setup, sitemaps, and performance tuning.</p>
+    </div>
+
+    <div class="card">
+      <h3>Technical Support</h3>
+      <p>Need help updating or maintaining your site? We offer lifetime support and performance improvement services.</p>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->  
+  <div class="footer">
+    <p>✧ Music Composer ✧</p>
+    <h3>Deepak Kumar Verma<br> <span style="color:red">DJ Abhishek</span><br>-----------------•⁠✧✧•⁠-----------------</h3>
+    <div class="footer-icons">
+      <a href="https://www.google.com/search?q=deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/128/2702/2702602.png" alt="google"></a>
+      <a href="https://facebook.com/deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="facebook"></a>
+      <a href="https://instagram.com/deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="instagram"></a>
+      <a href="https://youtube.com/@deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/128/15527/15527679.png" alt="youtube"></a>
+      <a href="https://wa.me/9452886695"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536445.png" alt="whatsapp"></a>
+    </div>
+    <p>&copy; 2026 Designed & Developed with <a href="http://adtech2021.netlify.app/" style="text-decoration:none"><span style="color:skyblue">ADTech India</span></a></p>
+    <div class="footer-links">
+      <a href="#">Home</a> | <a href="about.aspx.html">About</a> | <a href="developer.aspx.html">Developer</a> | <a href="terms.aspx.html">Terms</a> | <a href="FAQs.aspx.html">FAQs</a>
+    </div>
+  </div>
+  
+  <script src="footer.js"></script>
+</body>
+</html>

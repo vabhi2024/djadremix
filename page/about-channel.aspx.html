@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <title>djadremix.com</title>
+ 
+  <!-- Favicon -->
+ <link rel="icon" href="logo.png" type="image/png">
+ 
+ <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">   
+  <link rel="stylesheet" href="page.css" />
+
+  <style>  
+
+      main {
+      max-width: 1000px;
+      margin: 10px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #ff416c;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-weight: 550;
+      color: #444;
+    }
+
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .screenshots img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .subscribe-btn {
+      display: inline-block;
+      background: #ff4b2b;
+      color: white;
+      font-weight: bold;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .subscribe-btn:hover {
+      background: #d90000;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+  ul {
+    padding: 0 20px;
+    color: #222;
+  }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER & NAVBAR -->
+ <header>
+    <div class="logo">DJ <span style="color:red">AD Remix</span></div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="https://www.google.com/search?q=deepakkumarvermadjabhishek">About</a>
+      <a href="https://youtube.com/@deepakkumarvermadjabhishek">Videos</a>
+      <a href="tel:+919452886695">Contact</a>
+    </div>
+    <div class="menu-btn" onclick="openMenu()">☰</div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="close-btn" onclick="closeMenu()">×</div>
+    <a href="#" style="color:white"><i class="fa fa-home"></i> Home</a>
+    <a href="https://www.google.com/search?q=deepakkumarvermadjabhishek"><i class="fab fa-google-wallet"></i> About Us</a>
+    <a href="https://youtube.com/@deepakkumarvermadjabhishek"><i class="fa fa-play-circle"></i> Our Videos</a>
+    <a href="https://djadremix.netlify.app/version.1.0.0.apk" download class="download-btn"><i class="fa fa-download"></i> Download App</a>
+  </div>
+  
+  <!-- HEADER : POPUP TOGGLE -->  
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-button" onclick="togglePopup()">&times;</span>
+     </div>
+  </div>
+  
+  <main>
+
+  <!-- Section 1: Description -->
+  <section>
+    <h2>📌 Description</h2>
+    <p>
+      Welcome to <strong>DJ AD Remix | Deepak Kumar Verma DJ Abhishek</strong>, your destination for the latest Bhojpuri DJ Remixes, Bollywood Remixes, Party Mashups, Bass-Boosted Tracks, and exclusive music content. Stay connected for fresh remix releases, trending songs, and professional DJ mixes.
+    </p>
+  </section>
+
+  <!-- Section 2: Screenshots -->
+  <section>
+    <h2>📸 Channel Screenshots</h2>
+    <div class="screenshots">
+      <img src="yt-01.jpg" alt="DJ AD Remix Channel Screenshot 1">
+      <img src="yt-02.jpg" alt="DJ AD Remix Channel Screenshot 2">
+      <img src="yt-03.jpg" alt="DJ AD Remix Channel Screenshot 3">
+    </div>
+  </section>
+
+  <!-- Section 3: About Channel -->
+  <section>
+    <h2>ℹ️ About the Channel</h2>
+    <p>
+      DJ AD Remix is dedicated to providing high-quality remix music for DJs and music lovers. Our channel features Bhojpuri DJ songs, Bollywood remixes, festival specials, party mashups, and exclusive music productions. We continuously upload fresh content to keep our audience entertained with the latest remix trends.
+    </p>
+  </section>
+
+  <!-- Section 4: What You'll Find -->
+  <section>
+    <h2>🎵 What You'll Find Here</h2>
+    <ul>
+      <li>Latest Bhojpuri DJ Remixes</li>
+      <li>Bollywood Remix Songs</li>
+      <li>Party Mashups & Dance Mixes</li>
+      <li>Festival Special DJ Tracks</li>
+      <li>High Bass Audio Edits</li>
+      <li>Exclusive DJ AD Remix Releases</li>
+    </ul>
+  </section>
+
+  <!-- Section 5: Subscribe Button -->
+  <section class="center">
+    <h2>🔔 YouTube Channel</h2>
+    <a href="https://youtube.com/@deepakkumarvermadjabhishek" target="_blank" class="subscribe-btn">
+      Subscribe Now ➜
+    </a>
+  </section>
+
+</main>
+
+<!-- Footer -->  
+  <div class="footer">
+    <p>✧ Music Composer ✧</p>
+    <h3>Deepak Kumar Verma<br> <span style="color:red">DJ Abhishek</span><br>-----------------•⁠✧✧•⁠-----------------</h3>
+    <div class="footer-icons">
+      <a href="https://www.google.com/search?q=deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/128/2702/2702602.png" alt="google"></a>
+      <a href="https://facebook.com/deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="facebook"></a>
+      <a href="https://instagram.com/deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="instagram"></a>
+      <a href="https://youtube.com/@deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/128/15527/15527679.png" alt="youtube"></a>
+      <a href="https://wa.me/9452886695"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536445.png" alt="whatsapp"></a>
+    </div>
+    <p>&copy; 2026 Designed & Developed with <a href="http://adtech2021.netlify.app/" style="text-decoration:none"><span style="color:skyblue">ADTech India</span></a></p>
+    <div class="footer-links">
+      <a href="#">Home</a> | <a href="about.aspx.html">About</a> | <a href="developer.aspx.html">Developer</a> | <a href="terms.aspx.html">Terms</a> | <a href="FAQs.aspx.html">FAQs</a>
+    </div>
+  </div>
+  
+  <script src="footer.js"></script>
+</body>
+</html>

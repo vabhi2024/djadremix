@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <title>djadremix.com</title>
+ 
+  <!-- Favicon -->
+ <link rel="icon" href="logo.png" type="image/png">
+ 
+ <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">   
+  <link rel="stylesheet" href="page.css" />
+  
+ <style>
+    main {
+      max-width: 1000px;
+      margin: 10px auto;
+      padding: 0 10px;
+    }
+
+    .list-item {
+      display: flex;
+      align-items: center;
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      padding: 15px;
+      margin-bottom: 10px;
+      transition: transform 0.2s;
+    }
+
+    .list-item:hover {
+      transform: scale(1.01);
+    }
+
+    .rank {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #c33764;
+      margin-right: 20px;
+    }
+
+    .details {
+      flex: 1;
+    }
+
+    .details h2 {
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 5px;
+      font-size: 1.2rem;
+      color: #1d2671;
+    }
+
+    .details p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .list-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .rank {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER & NAVBAR -->
+ <header>
+    <div class="logo">DJ <span style="color:red">AD Remix</span></div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="https://www.google.com/search?q=deepakkumarvermadjabhishek">About</a>
+      <a href="https://youtube.com/@deepakkumarvermadjabhishek">Videos</a>
+      <a href="tel:+919452886695">Contact</a>
+    </div>
+    <div class="menu-btn" onclick="openMenu()">☰</div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="close-btn" onclick="closeMenu()">×</div>
+    <a href="#" style="color:white"><i class="fa fa-home"></i> Home</a>
+    <a href="https://www.google.com/search?q=deepakkumarvermadjabhishek"><i class="fab fa-google-wallet"></i> About Us</a>
+    <a href="https://youtube.com/@deepakkumarvermadjabhishek"><i class="fa fa-play-circle"></i> Our Videos</a>
+    <a href="https://djadremix.netlify.app/version.1.0.0.apk" download class="download-btn"><i class="fa fa-download"></i> Download App</a>
+  </div>
+  
+  <!-- HEADER : POPUP TOGGLE -->  
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-button" onclick="togglePopup()">&times;</span>
+     </div>
+  </div>
+  
+  <main>
+
+  <div class="list-item">
+    <div class="rank">1</div>
+    <div class="details">
+      <h2>Latest Bhojpuri DJ Remixes</h2>
+      <p>Enjoy the newest Bhojpuri DJ remix tracks with powerful bass, clear sound quality, and energetic beats.</p>
+    </div>
+  </div>
+
+  <div class="list-item">
+    <div class="rank">2</div>
+    <div class="details">
+      <h2>Bollywood Remix Collection</h2>
+      <p>Discover trending Bollywood remix songs specially mixed for parties, events, and music lovers.</p>
+    </div>
+  </div>
+
+  <div class="list-item">
+    <div class="rank">3</div>
+    <div class="details">
+      <h2>Party Mashup Special</h2>
+      <p>Listen to non-stop party mashups featuring multiple hit songs blended into one exciting mix.</p>
+    </div>
+  </div>
+
+  <div class="list-item">
+    <div class="rank">4</div>
+    <div class="details">
+      <h2>DJ AD Remix Exclusive Mixes</h2>
+      <p>Get access to exclusive DJ mixes created by Deepak Kumar Verma DJ Abhishek for music enthusiasts.</p>
+    </div>
+  </div>
+
+  <div class="list-item">
+    <div class="rank">5</div>
+    <div class="details">
+      <h2>Trending Remix Songs</h2>
+      <p>Stay updated with the latest trending remix tracks, viral music releases, and special DJ edits.</p>
+    </div>
+  </div>
+
+  <div class="list-item">
+    <div class="rank">6</div>
+    <div class="details">
+      <h2>Hindi DJ Dance Mix</h2>
+      <p>High-energy Hindi dance remixes designed for weddings, parties, and celebrations.</p>
+    </div>
+  </div>
+
+  <div class="list-item">
+    <div class="rank">7</div>
+    <div class="details">
+      <h2>Custom DJ Remix Requests</h2>
+      <p>Request personalized DJ remixes and special song edits for your events and entertainment needs.</p>
+    </div>
+  </div>
+
+  <div class="list-item">
+    <div class="rank">8</div>
+    <div class="details">
+      <h2>Festival Special Remixes</h2>
+      <p>Enjoy exclusive remix collections created for Holi, Diwali, New Year, and other special occasions.</p>
+    </div>
+  </div>
+
+  <div class="list-item">
+    <div class="rank">9</div>
+    <div class="details">
+      <h2>High Bass Audio Tracks</h2>
+      <p>Experience powerful bass and enhanced audio quality for an unforgettable music experience.</p>
+    </div>
+  </div>
+
+  <div class="list-item">
+    <div class="rank">10</div>
+    <div class="details">
+      <h2>Deepak Kumar Verma DJ Abhishek</h2>
+      <p>Follow the latest projects, remix releases, and music updates from DJ AD Remix.</p>
+    </div>
+  </div>
+
+</main>
+
+<!-- Footer -->  
+  <div class="footer">
+    <p>✧ Music Composer ✧</p>
+    <h3>Deepak Kumar Verma<br> <span style="color:red">DJ Abhishek</span><br>-----------------•⁠✧✧•⁠-----------------</h3>
+    <div class="footer-icons">
+      <a href="https://www.google.com/search?q=deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/128/2702/2702602.png" alt="google"></a>
+      <a href="https://facebook.com/deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="facebook"></a>
+      <a href="https://instagram.com/deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="instagram"></a>
+      <a href="https://youtube.com/@deepakkumarvermadjabhishek"><img src="https://cdn-icons-png.flaticon.com/128/15527/15527679.png" alt="youtube"></a>
+      <a href="https://wa.me/9452886695"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536445.png" alt="whatsapp"></a>
+    </div>
+    <p>&copy; 2026 Designed & Developed with <a href="http://adtech2021.netlify.app/" style="text-decoration:none"><span style="color:skyblue">ADTech India</span></a></p>
+    <div class="footer-links">
+      <a href="#">Home</a> | <a href="about.aspx.html">About</a> | <a href="developer.aspx.html">Developer</a> | <a href="terms.aspx.html">Terms</a> | <a href="FAQs.aspx.html">FAQs</a>
+    </div>
+  </div>
+  
+  <script src="footer.js"></script>
+</body>
+</html>
